@@ -1,3 +1,5 @@
+//@ts-check
+
 import mongoose from 'mongoose'
 const Schema = mongoose.Schema
 
@@ -20,3 +22,5 @@ CarSchema.virtual('creator', {
   foreignField: '_id',
   justOne: true
 })
+
+

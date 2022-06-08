@@ -31,6 +31,7 @@ export class CarsController extends BaseController {
 
 
   async getById(req, res, next) {
+    logger.log('made it to id service')
     try {
       const car = await carsService.getById(req.params.id)
       return res.send(car)
